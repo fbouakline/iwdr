@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+@font-face {
+    font-family: ITCAvantGardeStd-Md;
+    src: url('../fonts/ITCAvantGardeStd-Md.otf');
+}
+
+body {
+  background-color: #db95ff; /*Default bg, similar to the background's base color*/
+  background-image: url("../img/background.png");
+  background-position: right 180px;
+  background-repeat: no-repeat; /*Prevent showing multiple background images*/
+  background-attachment: fixed;
+  font-family: 'ITCAvantGardeStd-Md';
+  margin-bottom: 10px;
+}
+
+.item {
+  width: 90%;
+  margin: 0 auto;
+  border-bottom: 1px solid #dddbd5;
+  display: grid;
+  grid-template-columns: 25% 50% 25%;
+  padding-bottom: 1.5em;
+  padding-top: 1.5em;
+
+}
+
+.item-img img{
+  width: 90%;
+}
+
+.item-price {
+  color: #d12c2a;
+  font-size: 18px;
+}
+
+.item-options {
+  text-align: right;
+}
+
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.go-back:hover .text{
+  transform: scale(-1, 1);
+  display: inline-block;
+}
+
+.go-back {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+}
+
+.go-back .text {
+  font-size: 23px;
+}
+
+.volume {
+  color: rgb(100,100,100);
+}
+
+.order-container {
+
+
+  width: 45%;
+  margin: 0 auto;
+}
+
+.order {
+  min-height: 500px;
+  position: relative;
+  background-color: #fff;
+  box-shadow: 0 1px 4px 0 rgba(0,0,0,0.37);
+  padding-bottom: 100px;
+  margin-bottom: 50px;
+}
+
+.confirm {
+  text-transform: uppercase;
+  width:100%;
+  display: block;
+  text-align: center;
+  padding: 20px 0;
+  position: absolute;
+  bottom:0;
+  background-color: #89cff0;
+  color: #fff;
+  text-decoration: none;
+}
+
+.confirm:hover {
+  background-color: #62c2ef;
+}
+
+.options {
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+#input-1 {
+  width: 50%;
+  display: inline-block;
+}
+
+#input-2 {
+  width: 49%;
+  display: inline-block;
+}
+
+#input-3 {
+  width: 70%;
+  display: inline-block;
+}
+
+#input-4 {
+  width:29%;
+  display: inline-block;
+}
+
+@media only screen and (max-width : 1200px) {
+  .order-container {
+      width: 80%;
+  }
+}
+
+@media only screen and (max-width : 768px) {
+  .order-container {
+      width: 100%;
+  }
+}
+
+@media only screen and (max-width : 540px) {
+  .input {
+    width: 100% !important;
+    display: block !important;
+  }
+}
